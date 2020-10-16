@@ -4,6 +4,7 @@ import './app.css';
 
 import LogoIcon from './logo.svg';
 import LogoVertical from './logoVert.svg';
+import Menu from './menu.svg';
 
 const Container = styled.div`
     width: 100vw;
@@ -29,6 +30,11 @@ const ContainerBody = styled.div`
 const ContainerNav = styled.div`
     width: auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+    flex-grow: 1;
 `;
 
 const Logo = styled.img`
@@ -43,6 +49,11 @@ const LogoVert = styled.img`
     top: 0;
     left: 30px;
     position: absolute;
+`;
+
+const MenuIcon = styled.img`
+    width: 35px;
+    cursor: pointer;
 `;
 
 const TitleDiv = styled.div`
@@ -80,6 +91,15 @@ const T4 = styled.div`
     color: #333333;
 `;
 
+const T5 = styled.div`
+    font-family: HKGrotesk;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+    margin-top: 5px;
+`;
+
 function App() {
     return (
         <Container>
@@ -106,7 +126,12 @@ function App() {
                     Forbes, CNN, and more.
                 </T4>
             </ContainerBody>
-            <ContainerNav></ContainerNav>
+            <ContainerNav>
+                <MenuIcon src={Menu} />
+                <T5>Home</T5>
+                <T5>Members</T5>
+                <T5>Rush</T5>
+            </ContainerNav>
         </Container>
     );
 }
