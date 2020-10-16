@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BrowserRouter, Switch, Link } from 'react-router-dom';
 import './app.css';
 
 import LogoIcon from './logo.svg';
@@ -97,6 +98,14 @@ const T5 = styled.div`
     color: #333333;
     cursor: pointer;
     margin-top: 5px;
+    transition: all 0.2s ease;
+    :hover {
+        transform: scale(1.05);
+    }
+`;
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
 `;
 
 function App() {
@@ -127,9 +136,17 @@ function App() {
             </ContainerBody>
             <ContainerNav>
                 <MenuIcon src={Menu} />
-                <T5>Home</T5>
-                <T5>Members</T5>
-                <T5>Rush</T5>
+                <BrowserRouter>
+                    <StyledLink to='/'>
+                        <T5>Home</T5>
+                    </StyledLink>
+                    <StyledLink to='/members'>
+                        <T5>Members</T5>
+                    </StyledLink>
+                    <StyledLink to='/rush'>
+                        <T5>Rush</T5>
+                    </StyledLink>
+                </BrowserRouter>
             </ContainerNav>
         </Container>
     );
