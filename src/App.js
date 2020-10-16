@@ -88,13 +88,24 @@ class App extends Component {
         if (component.top >= 190) {
             return;
         }
-        // console.log(component.top);
         let st = window.scrollY;
-        let newPos =
-            parseInt(component.top.replace(/px/, '')) + (st - this.pos);
-        if (newPos >= 20 && newPos <= 190) {
-            component.top = newPos + 'px';
+        // scroll up
+        if (st > this.pos) {
+            let newPos =
+                parseInt(component.top.replace(/px/, '')) + (st - this.pos);
+            if (newPos >= 20 && newPos <= 190) {
+                component.top = newPos + 'px';
+            }
         }
+        // scroll down
+        else if (st <= 400) {
+            let newPos =
+                parseInt(component.top.replace(/px/, '')) + (st - this.pos);
+            if (newPos >= 20 && newPos <= 190) {
+                component.top = newPos + 'px';
+            }
+        }
+
         this.pos = st <= 0 ? 0 : st;
     };
 
