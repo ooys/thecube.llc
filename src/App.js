@@ -11,7 +11,6 @@ const Container = styled.div`
     max-width: 100vw;
     display: flex;
     padding-top: 25px;
-    animation: fadeIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 `;
 
 const ContainerLogo = styled.div`
@@ -25,6 +24,7 @@ const ContainerBody = styled.div`
     height: 200vh;
     display: flex;
     flex-direction: column;
+    animation: fadeIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 `;
 
 const ContainerNav = styled.div`
@@ -39,28 +39,26 @@ const ContainerNav = styled.div`
 
 const Logo = styled.img`
     width: 75px;
-    top: 170px;
+    top: 190px;
     left: 30px;
-    position: absolute;
+    position: fixed;
 `;
 
 const LogoVert = styled.img`
     width: 75px;
-    top: 0;
+    top: 20px;
     left: 30px;
-    position: absolute;
+    position: fixed;
 `;
 
 const MenuIcon = styled.img`
     width: 35px;
-    cursor: pointer;
 `;
 
 const TitleDiv = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    // background-color: gray;
     margin-top: 200px;
 `;
 
@@ -75,6 +73,7 @@ const T2 = styled.div`
     font-size: 50px;
     font-weight: 700;
     color: #333333;
+    margin-bottom: 10px;
 `;
 
 const T3 = styled.div`
@@ -86,7 +85,7 @@ const T3 = styled.div`
 
 const T4 = styled.div`
     font-family: HKGrotesk;
-    font-size: 35px;
+    font-size: 32.5px;
     font-weight: 500;
     color: #333333;
 `;
