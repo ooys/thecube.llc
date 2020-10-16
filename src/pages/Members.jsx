@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const ContainerBody = styled.div`
-    width: 71.5%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     animation: fadeIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -26,7 +26,7 @@ const T2 = styled.div`
     font-size: 50px;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 `;
 
 const T3 = styled.div`
@@ -50,7 +50,7 @@ const PersonTable = styled.div`
 `;
 
 const PersonContainer = styled.div`
-    width: 225px;
+    width: 200px;
     height: 250px;
     display: flex;
     flex-direction: column;

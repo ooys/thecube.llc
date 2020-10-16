@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const ContainerLogo = styled.div`
-    width: 12.5%;
+    width: 15%;
     height: 100%;
     position: relative;
 `;
