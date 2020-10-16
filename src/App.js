@@ -8,6 +8,7 @@ import LogoVertical from './logoVert.svg';
 import Menu from './menu.svg';
 
 import Home from './pages/Home';
+import Members from './pages/Members';
 
 const Container = styled.div`
     width: 100vw;
@@ -80,6 +81,7 @@ function App() {
                 </ContainerLogo>
                 <Switch>
                     <Route exact path='/' component={Home} />
+                    <Route exact path='/members' component={Members} />
                 </Switch>
                 <ContainerNav>
                     <MenuIcon src={Menu} />
