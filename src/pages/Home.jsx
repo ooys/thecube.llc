@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import AndurilLogo from '../logos/anduril.svg';
+import AndurilLogo from '../logos/anduril.png';
 import AtomicLogo from '../logos/atomic.png';
 import BridgewaterLogo from '../logos/bridgewater.png';
 import CitiLogo from '../logos/citi.png';
@@ -113,7 +113,7 @@ class Home extends Component {
                 <div style={{ height: '100px' }} />
                 <T2>Our Experiences</T2>
                 <Table>
-                    {/* <Image src={AndurilLogo}/> */}
+                    <Image src={AndurilLogo}/>
                     <Image src={AtomicLogo}/>
                     <Image src={BridgewaterLogo}/>
                     <Image src={CitiLogo}/>
