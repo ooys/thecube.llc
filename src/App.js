@@ -84,12 +84,11 @@ class App extends Component {
     }
 
     onScroll = (e) => {
-        if (window.scrollY >= 375) {
+        let component = this.logoRef.current.style;
+        if (component.top >= 190) {
             return;
         }
-
-        let component = this.logoRef.current.style;
-        console.log(component.top);
+        // console.log(component.top);
         let st = window.scrollY;
         let newPos =
             parseInt(component.top.replace(/px/, '')) + (st - this.pos);
