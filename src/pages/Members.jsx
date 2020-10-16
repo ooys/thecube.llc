@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const ContainerBody = styled.div`
     width: 71.5%;
-    height: 200vh;
     display: flex;
     flex-direction: column;
     animation: fadeIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -27,7 +26,7 @@ const T2 = styled.div`
     font-size: 50px;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 `;
 
 const T3 = styled.div`
@@ -39,9 +38,32 @@ const T3 = styled.div`
 
 const T4 = styled.div`
     font-family: HKGrotesk;
-    font-size: 32.5px;
+    font-size: 25px;
     font-weight: 500;
     color: #333333;
+`;
+
+const PersonTable = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+`;
+
+const PersonContainer = styled.div`
+    width: 225px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
+const PersonImage = styled.img`
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 `;
 
 class Members extends Component {
@@ -53,18 +75,111 @@ class Members extends Component {
                     <T3>Say hi to us anywhere, anytime!</T3>
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
-                <T2>Our Mission</T2>
-                <T4>
-                    The Cube is Duke's premier entrepreneurship-focused
-                    organization that lowers the barriers of entry to
-                    entrepreneurship and provides members with the skills and
-                    resources to pursue their own ventures. The Cube is also
-                    dedicated to promoting entrepreneurship of any form within
-                    the community and on Duke’s campus, including social
-                    ventures. Our alumni have gone on to create multiple
-                    multi-million dollar businesses, and have been featured on
-                    Forbes, CNN, and more.
-                </T4>
+                <T2>Class of 2021</T2>
+                <PersonTable>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                </PersonTable>
+                <T2>Class of 2022</T2>
+                <PersonTable>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                </PersonTable>
+                <T2>Class of 2023</T2>
+                <PersonTable>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
+                        <T4>Raymond Chen</T4>
+                    </PersonContainer>
+                </PersonTable>
             </ContainerBody>
         );
     }

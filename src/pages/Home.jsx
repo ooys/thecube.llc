@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const ContainerBody = styled.div`
     width: 71.5%;
-    height: 200vh;
     display: flex;
     flex-direction: column;
     animation: fadeIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
