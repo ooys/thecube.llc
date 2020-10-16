@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import AmazonLogo from '../logos/amazon.png';
 import AndurilLogo from '../logos/anduril.png';
 import AtomicLogo from '../logos/atomic.png';
 import BostonLogo from '../logos/boston.png';
@@ -92,7 +93,9 @@ class Home extends Component {
                     <T3>Duke's premier entrepeneurial organization.</T3>
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
-                <T2>Our Mission</T2>
+                <T2>
+                    Our <span style={{ color: '#003CB1' }}>Mission</span>
+                </T2>
                 <T4>
                     The Cube is Duke's premier entrepreneurship-focused
                     organization that lowers the barriers of entry to
@@ -105,27 +108,37 @@ class Home extends Component {
                     Forbes, CNN, and more.
                 </T4>
                 <div style={{ height: '100px' }} />
-                <T2>Our Mission</T2>
+                <T2>
+                    What We <span style={{ color: '#003CB1' }}>Do</span>
+                </T2>
                 <T4>
-                    The Cube is Duke's premier entrepreneurship-focused
-                    organization that lowers the barriers of entry to
-                    entrepreneurship and provides members with the skills and
-                    resources to pursue their own ventures. The Cube is also
-                    dedicated to promoting entrepreneurship of any form within
-                    the community and on Duke’s campus, including social
-                    ventures. Our alumni have gone on to create multiple
-                    multi-million dollar businesses, and have been featured on
-                    Forbes, CNN, and more.
+                    We are a community of computer scientists, engineers,
+                    economists, business developers, and more. We provide
+                    comprehensive entrepreneurial support all the way from
+                    evaluating product-market fit to technical development.
+                    <br /> <br />
+                    We host public and private speaking events, entrepreneurship
+                    summits, and other professional development workshops. We
+                    work closely with Duke’s entrepreneurship faculty to get our
+                    members the resources and expertise necessary to succeed.
+                    Moreover, our members and alumni are active in programs like
+                    the Duke Start-up Challenge and Melissa & Doug
+                    Entrepreneurship program.
+                    <br /> <br />
+                    The Cube has an extensive alumni network that have advised
+                    undergraduate Cube members in pursuing their own ventures.
                 </T4>
                 <div style={{ height: '100px' }} />
-                <T2>Our Experiences</T2>
+                <T2>
+                    Our <span style={{ color: '#003CB1' }}>Experiences</span>
+                </T2>
                 <Table>
                     <TableRow>
-                        <Image src={AndurilLogo} />
-                        <Image src={AtomicLogo} />
+                        <Image src={AmazonLogo} />
                         <Image src={MicrosoftLogo} />
-                        <Image src={CitiLogo} />
-                        <Image src={OptumLogo} />
+                        <Image src={AndurilLogo} />
+                        <Image src={BostonLogo} />
+                        <Image src={PearLogo} />
                     </TableRow>
                     <TableRow>
                         <Image src={ColdcallLogo} />
@@ -135,9 +148,10 @@ class Home extends Component {
                         <Image src={GoldmanLogo} />
                     </TableRow>
                     <TableRow>
-                        <Image src={BostonLogo} />
+                        <Image src={AtomicLogo} />
+                        <Image src={CitiLogo} />
                         <Image src={HumanLogo} />
-                        <Image src={PearLogo} />
+                        <Image src={OptumLogo} />
                         <Image src={OptiverLogo} />
                         <Image src={BridgewaterLogo} />
                     </TableRow>
