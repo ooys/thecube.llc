@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import AndurilLogo from '../logos/anduril.png';
 import AtomicLogo from '../logos/atomic.png';
+import BostonLogo from '../logos/boston.png';
 import BridgewaterLogo from '../logos/bridgewater.png';
 import CitiLogo from '../logos/citi.png';
 import ColdcallLogo from '../logos/coldcall.png';
@@ -11,6 +12,7 @@ import DropboxLogo from '../logos/dropbox.png';
 import FacebookLogo from '../logos/facebook.png';
 import GoldmanLogo from '../logos/goldman.png';
 import HumanLogo from '../logos/human.png';
+import MicrosoftLogo from '../logos/microsoft.png';
 import MorganLogo from '../logos/morgan.png';
 import OptiverLogo from '../logos/optiver.png';
 import OptumLogo from '../logos/optum.png';
@@ -115,6 +117,7 @@ class Home extends Component {
                 <Table>
                     <Image src={AndurilLogo}/>
                     <Image src={AtomicLogo}/>
+                    <Image src={BostonLogo}/>
                     <Image src={BridgewaterLogo}/>
                     <Image src={CitiLogo}/>
                     <Image src={ColdcallLogo}/>
@@ -123,6 +126,7 @@ class Home extends Component {
                     <Image src={FacebookLogo}/>
                     <Image src={GoldmanLogo}/>
                     <Image src={HumanLogo}/>
+                    <Image src={MicrosoftLogo}/>
                     <Image src={MorganLogo}/>
                     <Image src={OptiverLogo}/>
                     <Image src={OptumLogo}/>
