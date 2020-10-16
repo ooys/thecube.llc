@@ -14,15 +14,14 @@ const Container = styled.div`
 `;
 
 const ContainerLogo = styled.div`
-    width: 10%;
+    width: 12.5%;
     height: 100%;
     position: relative;
 `;
 
 const ContainerBody = styled.div`
-    width: 80%;
+    width: 72.5%;
     height: 200vh;
-    background-color: gray;
 `;
 
 const ContainerNav = styled.div`
@@ -44,6 +43,27 @@ const LogoVert = styled.img`
     position: absolute;
 `;
 
+const TitleDiv = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // background-color: gray;
+    margin-top: 200px;
+`;
+
+const T1 = styled.div`
+    font-family: Circular;
+    font-size: 90px;
+    color: #333333;
+`;
+
+const T3 = styled.div`
+    font-family: HKGrotesk;
+    font-size: 35px;
+    font-weight: 600;
+    color: #555555;
+`;
+
 function App() {
     return (
         <Container>
@@ -52,6 +72,14 @@ function App() {
                 <Logo src={LogoIcon} />
             </ContainerLogo>
             <ContainerBody>
+                <TitleDiv>
+                    <T1>
+                        The Cube
+                    </T1>
+                    <T3>
+                        Duke's premier entrepeneurial organization.
+                    </T3>
+                </TitleDiv>
             </ContainerBody>
             <ContainerNav>
             </ContainerNav>
