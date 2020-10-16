@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
 import './app.css';
 
-import LogoIcon from './logo.svg';
+import LogoIcon from './logoIcon.svg';
 import LogoVertical from './logoVert.svg';
 import Menu from './menu.svg';
 
@@ -35,7 +35,7 @@ const ContainerNav = styled.div`
 
 const Logo = styled.img`
     width: 75px;
-    top: 190px;
+    top: 20px;
     left: 30px;
     position: fixed;
     user-select: none;
@@ -71,33 +71,70 @@ const StyledLink = styled(Link)`
     text-decoration: none;
 `;
 
-function App() {
-    return (
-        <BrowserRouter>
-            <Container>
-                <ContainerLogo>
-                    <LogoVert src={LogoVertical} />
-                    <Logo src={LogoIcon} />
-                </ContainerLogo>
-                <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/members' component={Members} />
-                </Switch>
-                <ContainerNav>
-                    <MenuIcon src={Menu} />
-                    <StyledLink to='/'>
-                        <T5>Home</T5>
-                    </StyledLink>
-                    <StyledLink to='/members'>
-                        <T5>Members</T5>
-                    </StyledLink>
-                    <StyledLink to='/rush'>
-                        <T5>Rush</T5>
-                    </StyledLink>
-                </ContainerNav>
-            </Container>
-        </BrowserRouter>
-    );
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.pos = 0;
+        this.logoRef = React.createRef();
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.onScroll);
+        this.logoRef.current.style.top = '20px';
+    }
+
+    onScroll = (e) => {
+        if (window.scrollY >= 375) {
+            return;
+        }
+
+        let component = this.logoRef.current.style;
+        console.log(component.top);
+        let st = window.scrollY;
+        if (st > this.pos) {
+            let newPos = (parseInt(component.top.replace(/px/,""))+5)
+            if (newPos >= 20 && newPos <= 190) {
+                component.top = newPos+"px"
+            }
+        }
+        else {
+            let newPos = (parseInt(component.top.replace(/px/,""))-5)
+            if (newPos >= 20 && newPos <= 190) {
+                component.top = newPos+"px"
+            }
+        }
+
+        this.pos = st <= 0 ? 0 : st;
+    };
+
+    render() {
+        return (
+            <BrowserRouter>
+                <Container>
+                    <ContainerLogo>
+                        <LogoVert src={LogoVertical} />
+                        <Logo src={LogoIcon} ref={this.logoRef} />
+                    </ContainerLogo>
+                    <Switch>
+                        <Route exact path='/' component={Home} />
+                        <Route exact path='/members' component={Members} />
+                    </Switch>
+                    <ContainerNav>
+                        <MenuIcon src={Menu} />
+                        <StyledLink to='/'>
+                            <T5>Home</T5>
+                        </StyledLink>
+                        <StyledLink to='/members'>
+                            <T5>Members</T5>
+                        </StyledLink>
+                        <StyledLink to='/rush'>
+                            <T5>Rush</T5>
+                        </StyledLink>
+                    </ContainerNav>
+                </Container>
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;
