@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './app.css';
 
 import LogoIcon from './logo.svg';
