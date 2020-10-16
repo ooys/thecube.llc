@@ -91,19 +91,11 @@ class App extends Component {
         let component = this.logoRef.current.style;
         console.log(component.top);
         let st = window.scrollY;
-        if (st > this.pos) {
-            let newPos = (parseInt(component.top.replace(/px/,""))+5)
-            if (newPos >= 20 && newPos <= 190) {
-                component.top = newPos+"px"
-            }
+        let newPos =
+            parseInt(component.top.replace(/px/, '')) + (st - this.pos);
+        if (newPos >= 20 && newPos <= 190) {
+            component.top = newPos + 'px';
         }
-        else {
-            let newPos = (parseInt(component.top.replace(/px/,""))-5)
-            if (newPos >= 20 && newPos <= 190) {
-                component.top = newPos+"px"
-            }
-        }
-
         this.pos = st <= 0 ? 0 : st;
     };
 
