@@ -3,19 +3,20 @@ import styled from 'styled-components';
 import './app.css';
 
 import LogoIcon from './logo.svg';
-import LogoVertical from './logoText.svg';
+import LogoVertical from './logoVert.svg';
 
 const Container = styled.div`
     width: 100vw;
+    max-width: 100vw;
     display: flex;
     padding-top: 25px;
     animation: fadeIn 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 `;
 
 const ContainerLogo = styled.div`
-    width: 7.5%;
+    width: 10%;
     height: 100%;
-    padding-left: 50px;
+    position: relative;
 `;
 
 const ContainerBody = styled.div`
@@ -30,12 +31,17 @@ const ContainerNav = styled.div`
 `;
 
 const Logo = styled.img`
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    top: 170px;
+    left: 30px;
+    position: absolute;
 `;
 
 const LogoVert = styled.img`
-    height: 125px;
+    width: 75px;
+    top: 0;
+    left: 30px;
+    position: absolute;
 `;
 
 function App() {
@@ -46,10 +52,8 @@ function App() {
                 <Logo src={LogoIcon} />
             </ContainerLogo>
             <ContainerBody>
-                <Logo src={LogoIcon} />
             </ContainerBody>
             <ContainerNav>
-                <Logo src={LogoIcon} />
             </ContainerNav>
         </Container>
     );
