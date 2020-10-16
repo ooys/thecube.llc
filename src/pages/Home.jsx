@@ -67,7 +67,12 @@ const T4 = styled.div`
 const Table = styled.div`
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+`;
+
+const TableRow = styled.div`
+    width: 100%;
+    display: flex;
     justify-content: space-between;
 `;
 
@@ -115,26 +120,34 @@ class Home extends Component {
                 <div style={{ height: '100px' }} />
                 <T2>Our Experiences</T2>
                 <Table>
-                    <Image src={AndurilLogo}/>
-                    <Image src={AtomicLogo}/>
-                    <Image src={BostonLogo}/>
-                    <Image src={BridgewaterLogo}/>
-                    <Image src={CitiLogo}/>
-                    <Image src={ColdcallLogo}/>
-                    <Image src={ContraryLogo}/>
-                    <Image src={DropboxLogo}/>
-                    <Image src={FacebookLogo}/>
-                    <Image src={GoldmanLogo}/>
-                    <Image src={HumanLogo}/>
-                    <Image src={MicrosoftLogo}/>
-                    <Image src={MorganLogo}/>
-                    <Image src={OptiverLogo}/>
-                    <Image src={OptumLogo}/>
-                    <Image src={PalantirLogo}/>
-                    <Image src={PearLogo}/>
-                    <Image src={PendoLogo}/>
-                    <Image src={SomaLogo}/>
-                    <Image src={UizardLogo}/>
+                    <TableRow>
+                        <Image src={AndurilLogo} />
+                        <Image src={AtomicLogo} />
+                        <Image src={MicrosoftLogo} />
+                        <Image src={CitiLogo} />
+                        <Image src={OptumLogo} />
+                    </TableRow>
+                    <TableRow>
+                        <Image src={ColdcallLogo} />
+                        <Image src={ContraryLogo} />
+                        <Image src={DropboxLogo} />
+                        <Image src={FacebookLogo} />
+                        <Image src={GoldmanLogo} />
+                    </TableRow>
+                    <TableRow>
+                        <Image src={BostonLogo} />
+                        <Image src={HumanLogo} />
+                        <Image src={PearLogo} />
+                        <Image src={OptiverLogo} />
+                        <Image src={BridgewaterLogo} />
+                    </TableRow>
+                    <TableRow>
+                        <Image src={PalantirLogo} />
+                        <Image src={MorganLogo} />
+                        <Image src={PendoLogo} />
+                        <Image src={SomaLogo} />
+                        <Image src={UizardLogo} />
+                    </TableRow>
                 </Table>
                 <div style={{ height: '100px' }} />
             </ContainerBody>
