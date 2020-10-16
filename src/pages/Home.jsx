@@ -78,7 +78,7 @@ const TableRow = styled.div`
 `;
 
 const Image = styled.img`
-    height: 50px;
+    height: 40px;
     max-width: 500px;
     margin-right: 25px;
     margin-top: 45px;
