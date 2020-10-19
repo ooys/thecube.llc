@@ -188,6 +188,7 @@ class Home extends Component {
                         <Image src={UizardLogo} />
                     </TableRow>
                 </Table>
+                <div style={{ height: '100px' }} />
             </ContainerBody>
         );
     }
