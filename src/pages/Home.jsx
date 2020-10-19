@@ -7,7 +7,6 @@ import AtomicLogo from '../logos/atomic.png';
 import BostonLogo from '../logos/boston.png';
 import BridgewaterLogo from '../logos/bridgewater.png';
 import CitiLogo from '../logos/citi.png';
-import ColdcallLogo from '../logos/coldcall.png';
 import ContraryLogo from '../logos/contrary.png';
 import DropboxLogo from '../logos/dropbox.png';
 import FacebookLogo from '../logos/facebook.png';
@@ -22,6 +21,15 @@ import PearLogo from '../logos/pear.png';
 import PendoLogo from '../logos/pendo.png';
 import SomaLogo from '../logos/soma.png';
 import UizardLogo from '../logos/uizard.png';
+
+import ColdcallLogo from '../logos/coldcall.png';
+import ToucanLogo from '../logos/toucan.png';
+import FarmshotsLogo from '../logos/farmshots.png';
+import CarpeLogo from '../logos/carpe.png';
+import NeuroLogo from '../logos/neuro.png';
+import SmartLogo from '../logos/smart.png';
+import MatiLogo from '../logos/mati.png';
+import BuddiesLogo from '../logos/buddies.png';
 
 const ContainerBody = styled.div`
     width: 71.5%;
@@ -109,6 +117,24 @@ class Home extends Component {
                 </T4>
                 <div style={{ height: '100px' }} />
                 <T2>
+                    What We've <span style={{ color: '#003CB1' }}>Built</span>
+                </T2>
+                <Table>
+                    <TableRow>
+                        <Image src={ToucanLogo} />
+                        <Image src={FarmshotsLogo} />
+                        <Image src={ColdcallLogo} />
+                        <Image src={CarpeLogo} />
+                    </TableRow>
+                    <TableRow>
+                        <Image src={NeuroLogo} />
+                        <Image src={BuddiesLogo} />
+                        <Image src={SmartLogo} />
+                        <Image src={MatiLogo} />
+                    </TableRow>
+                </Table>
+                <div style={{ height: '100px' }} />
+                <T2>
                     What We <span style={{ color: '#003CB1' }}>Do</span>
                 </T2>
                 <T4>
@@ -141,7 +167,7 @@ class Home extends Component {
                         <Image src={PearLogo} />
                     </TableRow>
                     <TableRow>
-                        <Image src={ColdcallLogo} />
+                        <Image src={CitiLogo} />
                         <Image src={ContraryLogo} />
                         <Image src={DropboxLogo} />
                         <Image src={FacebookLogo} />
@@ -149,7 +175,6 @@ class Home extends Component {
                     </TableRow>
                     <TableRow>
                         <Image src={AtomicLogo} />
-                        <Image src={CitiLogo} />
                         <Image src={HumanLogo} />
                         <Image src={OptumLogo} />
                         <Image src={OptiverLogo} />
@@ -163,7 +188,6 @@ class Home extends Component {
                         <Image src={UizardLogo} />
                     </TableRow>
                 </Table>
-                <div style={{ height: '100px' }} />
             </ContainerBody>
         );
     }
