@@ -26,7 +26,7 @@ const T2 = styled.div`
     font-size: 50px;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 `;
 
 const T3 = styled.div`
@@ -41,6 +41,7 @@ const T4 = styled.div`
     font-size: 25px;
     font-weight: 500;
     color: #333333;
+    text-align: center;
 `;
 
 const PersonTable = styled.div`
@@ -51,11 +52,10 @@ const PersonTable = styled.div`
 
 const PersonContainer = styled.div`
     width: 200px;
-    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 45px;
 `;
 
 const PersonImage = styled.img`
@@ -64,10 +64,99 @@ const PersonImage = styled.img`
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: all 0.2s ease;
+    :hover {
+        transform: scale(1.05);
+    }
 `;
 
 class Members extends Component {
     render() {
+        var c2021 = [
+            'Suchir Bhatt',
+            'Sam Chan',
+            'Kate Chen',
+            'David Elias',
+            'Aayush Goradia',
+            'Andy Ju',
+            'Jaiveer Katariya',
+            'Alex Kornegay',
+            'Justin Tandon',
+            'Charlie Todd',
+        ];
+        var c2022 = [
+            'Vineet Alaparthi',
+            'Aaron Chai',
+            'Raymond Chen',
+            'Andrew Claxton',
+            'Donald Groh',
+            'Erik Jia',
+            'Justin Holmes',
+            'Shaiv Kittur',
+            'Ana Mees',
+            'Maggie Pan',
+            'Nitin Subramanian',
+            'Michelle Tai',
+            'Christine Yang',
+        ];
+        var c2023 = ['Ryan Chang', 'Jason Lee', 'Anna Xu'];
+
+        var alum = ['Michael Tan', 'Gaurav Uppal', 'Thomas Williford'];
+
+        var p2021 = c2021.map((p) => {
+            return (
+                <PersonContainer>
+                    <PersonImage
+                        src={require(`../people/${p
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                    <T4>{p}</T4>
+                </PersonContainer>
+            );
+        });
+        var p2022 = c2022.map((p) => {
+            return (
+                <PersonContainer>
+                    <PersonImage
+                        src={require(`../people/${p
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                    <T4>{p}</T4>
+                </PersonContainer>
+            );
+        });
+        var p2023 = c2023.map((p) => {
+            return (
+                <PersonContainer>
+                    <PersonImage
+                        src={require(`../people/${p
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                    <T4>{p}</T4>
+                </PersonContainer>
+            );
+        });
+
+        var pAlum = alum.map((p) => {
+            return (
+                <PersonContainer>
+                    <PersonImage
+                        src={require(`../people/${p
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                    <T4>{p}</T4>
+                </PersonContainer>
+            );
+        });
+
         return (
             <ContainerBody>
                 <TitleDiv>
@@ -76,110 +165,13 @@ class Members extends Component {
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
                 <T2>Class of 2021</T2>
-                <PersonTable>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                </PersonTable>
+                <PersonTable>{p2021}</PersonTable>
                 <T2>Class of 2022</T2>
-                <PersonTable>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                </PersonTable>
+                <PersonTable>{p2022}</PersonTable>
                 <T2>Class of 2023</T2>
-                <PersonTable>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage src='https://media-exp1.licdn.com/dms/image/C4E03AQF7p1442fBquA/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=fxW80CWxVRvchMxkXame5bQDIYCM96Gty6dSy5y8IVg' />
-                        <T4>Raymond Chen</T4>
-                    </PersonContainer>
-                </PersonTable>
+                <PersonTable>{p2023}</PersonTable>
+                <T2>Alumni</T2>
+                <PersonTable>{pAlum}</PersonTable>
             </ContainerBody>
         );
     }

@@ -129,8 +129,8 @@ class App extends Component {
                         <StyledLink to='/members'>
                             <T5>Members</T5>
                         </StyledLink>
-                        <StyledLink to='/rush'>
-                            <T5>Rush</T5>
+                        <StyledLink to='/gallery'>
+                            <T5>Gallery</T5>
                         </StyledLink>
                     </ContainerNav>
                 </Container>
