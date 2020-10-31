@@ -59,6 +59,7 @@ const PersonTable = styled.div`
     margin-bottom: 75px;
     @media (max-width: 768px) {
         margin-bottom: 50px;
+        justify-content: space-between;
     }
 `;
 
@@ -69,7 +70,7 @@ const PersonContainer = styled.div`
     align-items: center;
     margin-bottom: 45px;
     @media (max-width: 768px) {
-        width: 130px;
+        width: 125px;
         margin-bottom: 30px;
     }
 `;
