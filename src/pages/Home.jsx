@@ -107,7 +107,6 @@ const Image = styled.img`
     margin-right: 25px;
     margin-top: 45px;
     @media (max-width: 768px) {
-        height: auto;
         width: 40%;
         margin-top: 35px;
         margin-right: 0;

@@ -49,7 +49,7 @@ const T4 = styled.div`
     color: #333333;
     text-align: center;
     @media (max-width: 768px) {
-        font-size: 15px;
+        font-size: 20px;
     }
 `;
 
@@ -69,7 +69,7 @@ const PersonContainer = styled.div`
     align-items: center;
     margin-bottom: 45px;
     @media (max-width: 768px) {
-        width: 125px;
+        width: 130px;
         margin-bottom: 30px;
     }
 `;
@@ -85,8 +85,8 @@ const PersonImage = styled.img`
         transform: scale(1.05);
     }
     @media (max-width: 768px) {
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
     }
 `;
 
