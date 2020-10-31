@@ -81,8 +81,11 @@ class Members extends Component {
             'Andy Ju',
             'Jaiveer Katariya',
             'Alex Kornegay',
+            'Yash Patil',
             'Justin Tandon',
             'Charlie Todd',
+            'Rohan Reddy',
+            'Alex Balfanz',
         ];
         var c2022 = [
             'Vineet Alaparthi',
@@ -99,9 +102,38 @@ class Members extends Component {
             'Michelle Tai',
             'Christine Yang',
         ];
-        var c2023 = ['Ryan Chang', 'Jason Lee', 'Anna Xu'];
+        var c2023 = [
+            'Ryan Chang',
+            'Jason Lee',
+            'Kaitlyn Luo',
+            'Ashna Ram',
+            'William Xie',
+            'Anna Xu',
+            'Jane Zhang',
+            'Mona Su',
+            'Vishal Dubey',
+            'Will Inigo',
+            'Rob Wilds',
+            'Vanessa Chen',
+            'Han Zhang',
+            'Tim Ho',
+            'Jared Bank',
+        ];
 
-        var alum = ['Michael Tan', 'Gaurav Uppal', 'Thomas Williford'];
+        var alum = [
+            'Ethan Holland',
+            'Michael Tan',
+            'Gaurav Uppal',
+            'Thomas Williford',
+            'Isabel Senior',
+            'Trishul Nagenalli',
+            'Jie Cai',
+        ];
+
+        c2021.sort();
+        c2022.sort();
+        c2023.sort();
+        alum.sort();
 
         var p2021 = c2021.map((p) => {
             return (
