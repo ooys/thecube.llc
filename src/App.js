@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
 import './app.css';
 
 import LogoIcon from './logoIcon.svg';
+import LogoBox from './logoBox.svg';
 import LogoVertical from './logoVert.svg';
 import Menu from './menu.svg';
 
@@ -21,16 +22,22 @@ const ContainerLogo = styled.div`
     width: 15%;
     height: 100%;
     position: relative;
+    @media (max-width: 768px) {
+        width: 10%;
+    }
 `;
 
 const ContainerNav = styled.div`
-    width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding-right: 50px;
     flex-grow: 1;
+    @media (max-width: 768px) {
+        width: 30px;
+        padding-right: 25px;
+    }
 `;
 
 const Logo = styled.img`
@@ -39,6 +46,9 @@ const Logo = styled.img`
     left: 30px;
     position: fixed;
     user-select: none;
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const LogoVert = styled.img`
@@ -47,11 +57,23 @@ const LogoVert = styled.img`
     left: 30px;
     position: fixed;
     user-select: none;
+    @media (max-width: 768px) {
+        display: none;
+    }
+`;
+
+const LogoMain = styled.img`
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
 `;
 
 const MenuIcon = styled.img`
     width: 35px;
     user-select: none;
+    @media (max-width: 768px) {
+        width: 30px;
+    }
 `;
 
 const T5 = styled.div`
@@ -64,6 +86,9 @@ const T5 = styled.div`
     transition: all 0.2s ease;
     :hover {
         transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+        font-size: 17.5px;
     }
 `;
 
@@ -116,6 +141,7 @@ class App extends Component {
                     <ContainerLogo>
                         <LogoVert src={LogoVertical} />
                         <Logo src={LogoIcon} ref={this.logoRef} />
+                        <LogoMain src={LogoBox} />
                     </ContainerLogo>
                     <Switch>
                         <Route exact path='/' component={Home} />

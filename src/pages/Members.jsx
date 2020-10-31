@@ -19,6 +19,9 @@ const T1 = styled.div`
     font-family: Circular;
     font-size: 90px;
     color: #333333;
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
 `;
 
 const T2 = styled.div`
@@ -27,6 +30,9 @@ const T2 = styled.div`
     font-weight: 700;
     color: #333333;
     margin-bottom: 30px;
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 `;
 
 const T3 = styled.div`
@@ -42,12 +48,18 @@ const T4 = styled.div`
     font-weight: 500;
     color: #333333;
     text-align: center;
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
 `;
 
 const PersonTable = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 75px;
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
 `;
 
 const PersonContainer = styled.div`
@@ -56,6 +68,10 @@ const PersonContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
+    @media (max-width: 768px) {
+        width: 125px;
+        margin-bottom: 30px;
+    }
 `;
 
 const PersonImage = styled.img`
@@ -67,6 +83,10 @@ const PersonImage = styled.img`
     transition: all 0.2s ease;
     :hover {
         transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+        width: 75px;
+        height: 75px;
     }
 `;
 

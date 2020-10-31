@@ -49,6 +49,9 @@ const T1 = styled.div`
     font-family: Circular;
     font-size: 90px;
     color: #333333;
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
 `;
 
 const T2 = styled.div`
@@ -57,6 +60,9 @@ const T2 = styled.div`
     font-weight: 700;
     color: #333333;
     margin-bottom: 15px;
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
 `;
 
 const T3 = styled.div`
@@ -64,6 +70,9 @@ const T3 = styled.div`
     font-size: 35px;
     font-weight: 600;
     color: #555555;
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 `;
 
 const T4 = styled.div`
@@ -71,6 +80,9 @@ const T4 = styled.div`
     font-size: 32.5px;
     font-weight: 500;
     color: #333333;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 
 const Table = styled.div`
@@ -83,6 +95,10 @@ const TableRow = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
 `;
 
 const Image = styled.img`
@@ -90,6 +106,12 @@ const Image = styled.img`
     max-width: 500px;
     margin-right: 25px;
     margin-top: 45px;
+    @media (max-width: 768px) {
+        height: auto;
+        width: 40%;
+        margin-top: 35px;
+        margin-right: 0;
+    }
 `;
 
 class Home extends Component {
@@ -150,9 +172,6 @@ class Home extends Component {
                     Moreover, our members and alumni are active in programs like
                     the Duke Start-up Challenge and Melissa & Doug
                     Entrepreneurship program.
-                    <br /> <br />
-                    The Cube has an extensive alumni network that have advised
-                    undergraduate Cube members in pursuing their own ventures.
                 </T4>
                 <div style={{ height: '100px' }} />
                 <T2>
