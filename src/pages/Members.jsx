@@ -139,6 +139,8 @@ class Members extends Component {
             'Han Zhang',
             'Tim Ho',
             'Jared Bank',
+            'Larry Chen',
+            'Judy Zhong',
         ];
 
         var alum = [
