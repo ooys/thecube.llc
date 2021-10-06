@@ -141,6 +141,9 @@ class Members extends Component {
             'Jared Bank',
             'Larry Chen',
             'Judy Zhong',
+            'Evan Shen',
+            'Tina Xia',
+            'Leslie Dees'
         ];
 
         var alum = [
