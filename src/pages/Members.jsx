@@ -107,6 +107,7 @@ class Members extends Component {
             'Charlie Todd',
             'Rohan Reddy',
             'Alex Balfanz',
+            'Varun Nair'
         ];
         var c2022 = [
             'Vineet Alaparthi',
@@ -122,6 +123,8 @@ class Members extends Component {
             'Nitin Subramanian',
             'Michelle Tai',
             'Christine Yang',
+            'Bella Almeida',
+            'Catherine McMillan'
         ];
         var c2023 = [
             'Ryan Chang',
@@ -143,7 +146,8 @@ class Members extends Component {
             'Judy Zhong',
             'Evan Shen',
             'Tina Xia',
-            'Leslie Dees'
+            'Leslie Dees',
+            'Emily Mittleman'
         ];
 
         var alum = [
