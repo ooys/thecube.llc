@@ -150,7 +150,7 @@ class Members extends Component {
             'Emily Mittleman'
         ];
 
-        var alum = [
+        var c2020 = [
             'Ethan Holland',
             'Michael Tan',
             'Gaurav Uppal',
@@ -163,7 +163,7 @@ class Members extends Component {
         c2021.sort();
         c2022.sort();
         c2023.sort();
-        alum.sort();
+        c2020.sort();
 
         var p2021 = c2021.map((p) => {
             return (
@@ -205,7 +205,7 @@ class Members extends Component {
             );
         });
 
-        var pAlum = alum.map((p) => {
+        var p2020 = c2020.map((p) => {
             return (
                 <PersonContainer>
                     <PersonImage
@@ -226,14 +226,14 @@ class Members extends Component {
                     <T3>Say hi to us anywhere, anytime!</T3>
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
-                <T2>Class of 2021</T2>
-                <PersonTable>{p2021}</PersonTable>
-                <T2>Class of 2022</T2>
-                <PersonTable>{p2022}</PersonTable>
                 <T2>Class of 2023</T2>
                 <PersonTable>{p2023}</PersonTable>
-                <T2>Alumni</T2>
-                <PersonTable>{pAlum}</PersonTable>
+                <T2>Class of 2022</T2>
+                <PersonTable>{p2022}</PersonTable>
+                <T2>Class of 2021</T2>
+                <PersonTable>{p2021}</PersonTable>
+                <T2>Class of 2020</T2>
+                <PersonTable>{p2020}</PersonTable>
             </ContainerBody>
         );
     }
