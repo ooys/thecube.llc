@@ -63,6 +63,15 @@ const PersonImage = styled.img`
 
 class Members extends Component {
     render() {
+        var c2020 = [
+            'Ethan Holland',
+            'Michael Tan',
+            'Gaurav Uppal',
+            'Isabel Senior',
+            'Trishul Nagenalli',
+            'Jie Cai',
+        ];
+
         var c2021 = [
             'Suchir Bhatt',
             'Sam Chan',
@@ -121,20 +130,31 @@ class Members extends Component {
             'Emily Mittleman'
         ];
 
-        var c2020 = [
-            'Ethan Holland',
-            'Michael Tan',
-            'Gaurav Uppal',
-            'Isabel Senior',
-            'Trishul Nagenalli',
-            'Jie Cai',
-        ];
+        var c2024 = [
+            "Celina You",
+            "Clay Bromley",
+            "Sonali Sanjay",
+        ]
 
+        c2020.sort();
         c2021.sort();
         c2022.sort();
         c2023.sort();
-        c2020.sort();
+        c2024.sort();
 
+        var p2020 = c2020.map((p) => {
+            return (
+                <PersonContainer>
+                    <PersonImage
+                        src={require(`../assets/people/${p
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                    <T5>{p}</T5>
+                </PersonContainer>
+            );
+        });
         var p2021 = c2021.map((p) => {
             return (
                 <PersonContainer>
@@ -174,8 +194,7 @@ class Members extends Component {
                 </PersonContainer>
             );
         });
-
-        var p2020 = c2020.map((p) => {
+        var p2024 = c2024.map((p) => {
             return (
                 <PersonContainer>
                     <PersonImage
@@ -188,6 +207,7 @@ class Members extends Component {
                 </PersonContainer>
             );
         });
+        
 
         return (
             <ContainerBody>
@@ -196,6 +216,8 @@ class Members extends Component {
                     <T3>Say hi to us anywhere, anytime!</T3>
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
+                <T2>Class of 2024</T2>
+                <PersonTable>{p2024}</PersonTable>
                 <T2>Class of 2023</T2>
                 <PersonTable>{p2023}</PersonTable>
                 <T2>Class of 2022</T2>

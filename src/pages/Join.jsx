@@ -5,6 +5,15 @@ import T1 from '../components/T1';
 import T3 from '../components/T3';
 import T4 from '../components/T4';
 
+import Img1 from '../assets/gallery/1.jpg';
+import Img2 from '../assets/gallery/2.jpg';
+import Img3 from '../assets/gallery/3.jpg';
+import Img4 from '../assets/gallery/4.jpg';
+import Img5 from '../assets/gallery/5.jpg';
+import Img6 from '../assets/gallery/6.jpg';
+import Img7 from '../assets/gallery/7.jpg';
+import Img8 from '../assets/gallery/8.jpg';
+
 const ContainerBody = styled.div`
     width: 71.5%;
     display: flex;
@@ -19,6 +28,20 @@ const TitleDiv = styled.div`
     margin-top: 200px;
 `;
 
+const Gallery = styled.div`
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 15px;
+`;
+
+const GalleryImg = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+`;
+
 class Home extends Component {
     render() {
         return (
@@ -28,11 +51,64 @@ class Home extends Component {
                     <T3>Our rush process:</T3>
                 </TitleDiv>
                 <div style={{ height: '150px' }} />
+                <Gallery>
+                    <GalleryImg src={Img5} style={{
+                        gridColumnStart: "5",
+                        gridColumnEnd: "8",
+                        gridRowStart: "1",
+                        gridRowEnd: "7",
+                    }} />
+                    <GalleryImg src={Img2} style={{
+                        gridColumnStart: "1",
+                        gridColumnEnd: "5",
+                        gridRowStart: "1",
+                        gridRowEnd: "4",
+                    }} />
+                    <GalleryImg src={Img3} style={{
+                        gridColumnStart: "1",
+                        gridColumnEnd: "3",
+                        gridRowStart: "4",
+                        gridRowEnd: "7",
+                    }} />
+                    <GalleryImg src={Img8} style={{
+                        gridColumnStart: "3",
+                        gridColumnEnd: "5",
+                        gridRowStart: "4",
+                        gridRowEnd: "7",
+                    }} />
+                </Gallery>
                 <T4>
-                    Every fall semester, we organize a rush process for member recruiting! 
+                    Every fall semester, we organize a rush process for member recruiting!
                     We'll post online and around campus when we start. Rush lasts 2 weeks and has 2 rounds.
                 </T4>
-                <div style={{ height: '200px' }} />
+                <div style={{ height: '75px' }} />
+                <Gallery>
+                    <GalleryImg src={Img6} style={{
+                        gridColumnStart: "1",
+                        gridColumnEnd: "4",
+                        gridRowStart: "1",
+                        gridRowEnd: "7",
+                    }} />
+                    <GalleryImg src={Img1} style={{
+                        gridColumnStart: "4",
+                        gridColumnEnd: "6",
+                        gridRowStart: "1",
+                        gridRowEnd: "3",
+                    }} />
+                    <GalleryImg src={Img4} style={{
+                        gridColumnStart: "6",
+                        gridColumnEnd: "8",
+                        gridRowStart: "1",
+                        gridRowEnd: "3",
+                    }} />
+                    <GalleryImg src={Img7} style={{
+                        gridColumnStart: "4",
+                        gridColumnEnd: "8",
+                        gridRowStart: "3",
+                        gridRowEnd: "7",
+                    }} />
+                </Gallery>
+                <div style={{ height: '50px' }} />
             </ContainerBody>
         );
     }
