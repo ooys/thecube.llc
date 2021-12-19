@@ -18,6 +18,11 @@ const TitleDiv = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 200px;
+    margin-bottom: 250px;
+`;
+
+const Section = styled.div`
+    margin-bottom: 75px;
 `;
 
 const Table = styled.div`
@@ -26,6 +31,10 @@ const Table = styled.div`
     grid-template-columns: repeat(auto-fill, 100px);
     justify-content: space-between;
     grid-gap: 10px;
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(auto-fill, 75px);
+        grid-gap: 5px;
+    }
 `;
 
 const StartupTable = styled.div`
@@ -118,6 +127,7 @@ class Home extends Component {
             glowforge: "https://glowforge.com/",
             balanced: "https://www.hellobalanced.com/",
             leap: "https://www.leap.work/",
+            dccc: "https://dccc.org/",
         }
 
         var startups = [
@@ -133,7 +143,7 @@ class Home extends Component {
             "coldcall",
         ]
 
-        
+
         var experiencesLogoSplash = Object.keys(experiences).sort().map((expKey) => {
             return (
                 <a href={experiences[expKey]} target="_blank">
@@ -164,54 +174,65 @@ class Home extends Component {
                     <T1>The Cube</T1>
                     <T3>Duke's premier entrepeneurial organization.</T3>
                 </TitleDiv>
-                <div style={{ height: '250px' }} />
-                <T2>
-                    Our <span style={{ color: '#003CB1' }}>Mission</span>
-                </T2>
-                <T4>
-                    The Cube is Duke's premier entrepreneurship-focused
-                    organization that lowers the barriers of entry to
-                    entrepreneurship and provides members with the skills and
-                    resources to pursue their own ventures. The Cube is also
-                    dedicated to promoting entrepreneurship of any form within
-                    the community and on Duke’s campus, including social
-                    ventures. Our alumni have gone on to create multiple
-                    multi-million dollar businesses, and have been featured on
-                    Forbes, CNN, and more.
-                </T4>
-                <div style={{ height: '100px' }} />
-                <T2>
-                    What We've <span style={{ color: '#003CB1' }}>Built</span>
-                </T2>
-                <StartupTable>
-                    {startupLogoSplash}
-                </StartupTable>
-                <div style={{ height: '100px' }} />
-                <T2>
-                    What We <span style={{ color: '#003CB1' }}>Do</span>
-                </T2>
-                <T4>
-                    We are a community of computer scientists, engineers,
-                    economists, business developers, and more. We provide
-                    comprehensive entrepreneurial support all the way from
-                    evaluating product-market fit to technical development.
-                    <br /> <br />
-                    We host public and private speaking events, entrepreneurship
-                    summits, and other professional development workshops. We
-                    work closely with Duke’s entrepreneurship faculty to get our
-                    members the resources and expertise necessary to succeed.
-                    Moreover, our members and alumni are active in programs like
-                    the Duke Start-up Challenge and Melissa & Doug
-                    Entrepreneurship program.
-                </T4>
-                <div style={{ height: '100px' }} />
-                <T2>
-                    Our <span style={{ color: '#003CB1' }}>Experiences</span>
-                </T2>
-                <Table>
-                    {experiencesLogoSplash}
-                </Table>
-                <div style={{ height: '100px' }} />
+                <Section>
+                    <T2>
+                        Our <span style={{ color: '#003CB1' }}>Mission</span>
+                    </T2>
+                    <T4>
+                        The Cube is Duke's premier entrepreneurship-focused
+                        organization that lowers the barriers of entry to
+                        entrepreneurship and provides members with the skills and
+                        resources to pursue their own ventures. The Cube is also
+                        dedicated to promoting entrepreneurship of any form within
+                        the community and on Duke’s campus, including social
+                        ventures. Our alumni have gone on to create multiple
+                        multi-million dollar businesses, and have been featured on
+                        Forbes, CNN, and more.
+                    </T4>
+                </Section>
+                <Section>
+                    <T2>
+                        What We've <span style={{ color: '#003CB1' }}>Built</span>
+                    </T2>
+                    <T4>
+                        We love building! Here are just a few startups that we've built.
+                    </T4>
+                    <StartupTable>
+                        {startupLogoSplash}
+                    </StartupTable>
+                </Section>
+                <Section>
+                    <T2>
+                        What We <span style={{ color: '#003CB1' }}>Do</span>
+                    </T2>
+                    <T4>
+                        We are a community of computer scientists, engineers,
+                        economists, business developers, and more. We provide
+                        comprehensive entrepreneurial support all the way from
+                        evaluating product-market fit to technical development.
+                        <br /> <br />
+                        We host public and private speaking events, entrepreneurship
+                        summits, and other professional development workshops. We
+                        work closely with Duke’s entrepreneurship faculty to get our
+                        members the resources and expertise necessary to succeed.
+                        Moreover, our members and alumni are active in programs like
+                        the Duke Start-up Challenge and Melissa & Doug
+                        Entrepreneurship program.
+                    </T4>
+                </Section>
+                <Section>
+                    <T2>
+                        Our <span style={{ color: '#003CB1' }}>Experiences</span>
+                    </T2>
+                    <T4 style={{ marginBottom: "20px" }}>
+                        Here are some of the places we've worked at before.
+                        We're proud to have supported these companies, whether multi-billion dollar public firms or private startups in their infancy,
+                        in their missions.
+                    </T4>
+                    <Table>
+                        {experiencesLogoSplash}
+                    </Table>
+                </Section>
             </ContainerBody>
         );
     }
