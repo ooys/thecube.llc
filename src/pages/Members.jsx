@@ -134,6 +134,7 @@ class Members extends Component {
             "Celina You",
             "Clay Bromley",
             "Sonali Sanjay",
+            "Claire Tan",
         ]
 
         c2020.sort();

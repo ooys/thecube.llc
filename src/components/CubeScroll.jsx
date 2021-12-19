@@ -22,6 +22,13 @@ const LogoTextImg = styled.img`
     user-select: none;
     user-drag: none;
     transform: rotate(270deg);
+    @media (max-width: 800px) {
+        width: 100px;
+    }
+    @media (max-width: 400px) {
+        width: 50px;
+        margin-top: 25px;
+    }
 `;
 
 const LogoAnimated = styled(motion.div)`
@@ -37,6 +44,14 @@ const LogoAnimated = styled(motion.div)`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    @media (max-width: 800px) {
+        margin-left: 37.5px;
+        width: 25px;
+    }
+    @media (max-width: 400px) {
+        margin-left: 17.5px;
+        width: 15px;
+    }
 `;
 
 const LogoIconImg = styled.img`
@@ -44,13 +59,30 @@ const LogoIconImg = styled.img`
     margin-top: 10px;
     user-select: none;
     user-drag: none;
+    @media (max-width: 800px) {
+        width: 20px;
+    }
+    @media (max-width: 400px) {
+        margin-top: 5px;
+        width: 15px;
+    }
 `;
 
 const CubeScroll = () => {
     // for scrollYProgress to work, body css height must not be set to 100%
     const { scrollYProgress } = useViewportScroll()
+    // get viewport width
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    var scrollMax = 180;
+    if (vw < 900) {
+        scrollMax = 150;
+    }
+    if (vw <= 400) {
+        scrollMax = 70;
+    }
+
     // useTransform maps values input -> output, we want the full movement in the first 0.15 of page scroll
-    const yPosAnim = useTransform(scrollYProgress, [0, 0.15, 1], [0, 180, 180]);
+    const yPosAnim = useTransform(scrollYProgress, [0, 0.15, 1], [0, scrollMax, scrollMax]);
 
     return (
         <Container>

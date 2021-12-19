@@ -7,7 +7,7 @@ const T4 = styled.div`
     color: #333333;
     text-align: center;
     @media (max-width: 800px) {
-        font-size: 20px;
+        font-size: 17.5px;
     }
 `;
 

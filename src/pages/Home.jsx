@@ -45,12 +45,21 @@ const StartupLogoImage = styled.img`
         margin-top: 35px;
         margin-right: 0;
     }
+    // for mobile
+    @media (max-width: 400px) {
+        width: auto;
+    }
 `;
 
 const LogoImage = styled.img`
     height: 95px;
     width: 95px;
     margin: 15px;
+    @media (max-width: 800px) {
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+    }
 `;
 
 class Home extends Component {
