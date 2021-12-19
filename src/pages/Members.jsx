@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import T1 from '../components/T1';
+import T2 from '../components/T2';
+import T3 from '../components/T3';
+import T5 from '../components/T5';
+
 const ContainerBody = styled.div`
     width: 70%;
     display: flex;
@@ -15,51 +20,16 @@ const TitleDiv = styled.div`
     margin-top: 200px;
 `;
 
-const T1 = styled.div`
-    font-family: Circular;
-    font-size: 90px;
-    color: #333333;
-    @media (max-width: 768px) {
-        font-size: 50px;
-    }
-`;
-
-const T2 = styled.div`
-    font-family: HKGrotesk;
-    font-size: 50px;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 30px;
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
-`;
-
-const T3 = styled.div`
-    font-family: HKGrotesk;
-    font-size: 35px;
-    font-weight: 600;
-    color: #555555;
-`;
-
-const T4 = styled.div`
-    font-family: HKGrotesk;
-    font-size: 25px;
-    font-weight: 500;
-    color: #333333;
-    text-align: center;
-    @media (max-width: 768px) {
-        font-size: 20px;
-    }
-`;
-
 const PersonTable = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-between;
+    grid-gap: 10px;
+    margin-top: 25px;
     margin-bottom: 75px;
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(auto-fill, 100px);
         margin-bottom: 50px;
-        justify-content: space-between;
     }
 `;
 
@@ -69,15 +39,15 @@ const PersonContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         width: 125px;
         margin-bottom: 30px;
     }
 `;
 
 const PersonImage = styled.img`
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -85,7 +55,7 @@ const PersonImage = styled.img`
     :hover {
         transform: scale(1.05);
     }
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         width: 100px;
         height: 100px;
     }
@@ -97,13 +67,11 @@ class Members extends Component {
             'Suchir Bhatt',
             'Sam Chan',
             'Kate Chen',
-            'David Elias',
             'Aayush Goradia',
             'Andy Ju',
             'Jaiveer Katariya',
             'Alex Kornegay',
             'Yash Patil',
-            'Justin Tandon',
             'Charlie Todd',
             'Rohan Reddy',
             'Alex Balfanz',
@@ -111,6 +79,8 @@ class Members extends Component {
         ];
         var c2022 = [
             'Vineet Alaparthi',
+            'Justin Tandon',
+            'David Elias',
             'Aaron Chai',
             'Raymond Chen',
             'Andrew Claxton',
@@ -124,7 +94,8 @@ class Members extends Component {
             'Michelle Tai',
             'Christine Yang',
             'Bella Almeida',
-            'Catherine McMillan'
+            'Catherine McMillan',
+            'Thomas Williford',
         ];
         var c2023 = [
             'Ryan Chang',
@@ -154,7 +125,6 @@ class Members extends Component {
             'Ethan Holland',
             'Michael Tan',
             'Gaurav Uppal',
-            'Thomas Williford',
             'Isabel Senior',
             'Trishul Nagenalli',
             'Jie Cai',
@@ -169,12 +139,12 @@ class Members extends Component {
             return (
                 <PersonContainer>
                     <PersonImage
-                        src={require(`../people/${p
+                        src={require(`../assets/people/${p
                             .split(' ')
                             .join('')
                             .toLowerCase()}.jpg`)}
                     />
-                    <T4>{p}</T4>
+                    <T5>{p}</T5>
                 </PersonContainer>
             );
         });
@@ -182,12 +152,12 @@ class Members extends Component {
             return (
                 <PersonContainer>
                     <PersonImage
-                        src={require(`../people/${p
+                        src={require(`../assets/people/${p
                             .split(' ')
                             .join('')
                             .toLowerCase()}.jpg`)}
                     />
-                    <T4>{p}</T4>
+                    <T5>{p}</T5>
                 </PersonContainer>
             );
         });
@@ -195,12 +165,12 @@ class Members extends Component {
             return (
                 <PersonContainer>
                     <PersonImage
-                        src={require(`../people/${p
+                        src={require(`../assets/people/${p
                             .split(' ')
                             .join('')
                             .toLowerCase()}.jpg`)}
                     />
-                    <T4>{p}</T4>
+                    <T5>{p}</T5>
                 </PersonContainer>
             );
         });
@@ -209,12 +179,12 @@ class Members extends Component {
             return (
                 <PersonContainer>
                     <PersonImage
-                        src={require(`../people/${p
+                        src={require(`../assets/people/${p
                             .split(' ')
                             .join('')
                             .toLowerCase()}.jpg`)}
                     />
-                    <T4>{p}</T4>
+                    <T5>{p}</T5>
                 </PersonContainer>
             );
         });

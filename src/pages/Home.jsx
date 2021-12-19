@@ -1,35 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import AmazonLogo from '../logos/amazon.png';
-import AndurilLogo from '../logos/anduril.png';
-import AtomicLogo from '../logos/atomic.png';
-import BostonLogo from '../logos/boston.png';
-import BridgewaterLogo from '../logos/bridgewater.png';
-import CitiLogo from '../logos/citi.png';
-import ContraryLogo from '../logos/contrary.png';
-import DropboxLogo from '../logos/dropbox.png';
-import FacebookLogo from '../logos/facebook.png';
-import GoldmanLogo from '../logos/goldman.png';
-import HumanLogo from '../logos/human.png';
-import MicrosoftLogo from '../logos/microsoft.png';
-import MorganLogo from '../logos/morgan.png';
-import OptiverLogo from '../logos/optiver.png';
-import OptumLogo from '../logos/optum.png';
-import PalantirLogo from '../logos/palantir.png';
-import PearLogo from '../logos/pear.png';
-import PendoLogo from '../logos/pendo.png';
-import SomaLogo from '../logos/soma.png';
-import UizardLogo from '../logos/uizard.png';
-
-import ColdcallLogo from '../logos/coldcall.png';
-import ToucanLogo from '../logos/toucan.png';
-import FarmshotsLogo from '../logos/farmshots.png';
-import CarpeLogo from '../logos/carpe.png';
-import NeuroLogo from '../logos/neuro.png';
-import SmartLogo from '../logos/smart.png';
-import MatiLogo from '../logos/mati.png';
-import BuddiesLogo from '../logos/buddies.png';
+import T1 from '../components/T1';
+import T2 from '../components/T2';
+import T3 from '../components/T3';
+import T4 from '../components/T4';
 
 const ContainerBody = styled.div`
     width: 71.5%;
@@ -45,66 +20,25 @@ const TitleDiv = styled.div`
     margin-top: 200px;
 `;
 
-const T1 = styled.div`
-    font-family: Circular;
-    font-size: 90px;
-    color: #333333;
-    @media (max-width: 768px) {
-        font-size: 50px;
-    }
-`;
-
-const T2 = styled.div`
-    font-family: HKGrotesk;
-    font-size: 50px;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 15px;
-    @media (max-width: 768px) {
-        font-size: 35px;
-    }
-`;
-
-const T3 = styled.div`
-    font-family: HKGrotesk;
-    font-size: 35px;
-    font-weight: 600;
-    color: #555555;
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
-`;
-
-const T4 = styled.div`
-    font-family: HKGrotesk;
-    font-size: 32.5px;
-    font-weight: 500;
-    color: #333333;
-    @media (max-width: 768px) {
-        font-size: 20px;
-    }
-`;
-
 const Table = styled.div`
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    justify-content: space-between;
+    grid-gap: 10px;
 `;
 
-const TableRow = styled.div`
+const StartupTable = styled.div`
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-
-    @media (max-width: 768px) {
-        flex-wrap: wrap;
-    }
 `;
 
-const Image = styled.img`
+const StartupLogoImage = styled.img`
     height: 40px;
     max-width: 500px;
-    margin-right: 25px;
+    margin: 25px;
     margin-top: 45px;
     @media (max-width: 768px) {
         width: 40%;
@@ -113,8 +47,85 @@ const Image = styled.img`
     }
 `;
 
+const LogoImage = styled.img`
+    height: 95px;
+    width: 95px;
+    margin: 15px;
+`;
+
 class Home extends Component {
     render() {
+        var experiences = [
+            "amazon",
+            "meta",
+            "microsoft",
+            "stripe",
+            "slack",
+            "dropbox",
+            "ibm",
+            "optum",
+            "mckinsey",
+            "bcg",
+            "bain",
+            "goldman",
+            "jane",
+            "optiver",
+            "bridgewater",
+            "morgan",
+            "citi",
+            "kp",
+            "atomic",
+            "contrary",
+            "pear",
+            "drf",
+            "hc",
+            "soma",
+            "check",
+            "retool",
+            "anduril",
+            "alloy",
+            "pendo",
+            "magical",
+            "titan",
+            "uizard",
+            "curai",
+        ]
+
+        var startups = [
+            "jailbreak",
+            "toucan",
+            "farmshots",
+            "carpe",
+            "mati",
+            "scope",
+            "neuro",
+            "smart",
+            "buddies",
+            "coldcall",
+        ]
+
+        var experiencesLogoSplash = experiences.map((exp) => {
+            return (
+                <LogoImage
+                    src={require(`../assets/company_logos/${exp
+                        .split(' ')
+                        .join('')
+                        .toLowerCase()}.jpg`)}
+                />
+            );
+        });
+
+        var startupLogoSplash = startups.map((start) => {
+            return (
+                <StartupLogoImage
+                    src={require(`../assets/startup_logos/${start
+                        .split(' ')
+                        .join('')
+                        .toLowerCase()}.png`)}
+                />
+            );
+        });
+
         return (
             <ContainerBody>
                 <TitleDiv>
@@ -140,20 +151,9 @@ class Home extends Component {
                 <T2>
                     What We've <span style={{ color: '#003CB1' }}>Built</span>
                 </T2>
-                <Table>
-                    <TableRow>
-                        <Image src={ToucanLogo} />
-                        <Image src={FarmshotsLogo} />
-                        <Image src={ColdcallLogo} />
-                        <Image src={CarpeLogo} />
-                    </TableRow>
-                    <TableRow>
-                        <Image src={NeuroLogo} />
-                        <Image src={BuddiesLogo} />
-                        <Image src={SmartLogo} />
-                        <Image src={MatiLogo} />
-                    </TableRow>
-                </Table>
+                <StartupTable>
+                    {startupLogoSplash}
+                </StartupTable>
                 <div style={{ height: '100px' }} />
                 <T2>
                     What We <span style={{ color: '#003CB1' }}>Do</span>
@@ -177,34 +177,7 @@ class Home extends Component {
                     Our <span style={{ color: '#003CB1' }}>Experiences</span>
                 </T2>
                 <Table>
-                    <TableRow>
-                        <Image src={AmazonLogo} />
-                        <Image src={MicrosoftLogo} />
-                        <Image src={AndurilLogo} />
-                        <Image src={BostonLogo} />
-                        <Image src={PearLogo} />
-                    </TableRow>
-                    <TableRow>
-                        <Image src={CitiLogo} />
-                        <Image src={ContraryLogo} />
-                        <Image src={DropboxLogo} />
-                        <Image src={FacebookLogo} />
-                        <Image src={GoldmanLogo} />
-                    </TableRow>
-                    <TableRow>
-                        <Image src={AtomicLogo} />
-                        <Image src={HumanLogo} />
-                        <Image src={OptumLogo} />
-                        <Image src={OptiverLogo} />
-                        <Image src={BridgewaterLogo} />
-                    </TableRow>
-                    <TableRow>
-                        <Image src={PalantirLogo} />
-                        <Image src={MorganLogo} />
-                        <Image src={PendoLogo} />
-                        <Image src={SomaLogo} />
-                        <Image src={UizardLogo} />
-                    </TableRow>
+                    {experiencesLogoSplash}
                 </Table>
                 <div style={{ height: '100px' }} />
             </ContainerBody>
