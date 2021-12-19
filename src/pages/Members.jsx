@@ -48,7 +48,7 @@ const PersonContainer = styled.div`
 const PersonImage = styled.img`
     width: 175px;
     height: 175px;
-    border-radius: 50%;
+    border-radius: 6px;
     object-fit: cover;
     margin-bottom: 20px;
     transition: all 0.2s ease;
