@@ -146,7 +146,7 @@ class Home extends Component {
 
         var experiencesLogoSplash = Object.keys(experiences).sort().map((expKey) => {
             return (
-                <a href={experiences[expKey]} target="_blank">
+                <a href={experiences[expKey]} target="_blank" rel="noopener noreferrer">
                     <LogoImage
                         src={require(`../assets/company_logos/${expKey
                             .split(' ')
@@ -172,7 +172,7 @@ class Home extends Component {
             <ContainerBody>
                 <TitleDiv>
                     <T1>The Cube</T1>
-                    <T3>Duke's premier entrepeneurial organization.</T3>
+                    <T3><span role="img" aria-label="rocket">🚀</span> Duke's premier entrepeneurial organization.</T3>
                 </TitleDiv>
                 <Section>
                     <T2>

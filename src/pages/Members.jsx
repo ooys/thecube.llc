@@ -215,7 +215,7 @@ class Members extends Component {
             <ContainerBody>
                 <TitleDiv>
                     <T1>Members</T1>
-                    <T3>Say hi to us anywhere, anytime!</T3>
+                    <T3><span role="img" aria-label="wave">👋</span> Say hi to our family!</T3>
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
                 <T2>Class of 2024</T2>

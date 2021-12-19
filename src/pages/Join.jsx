@@ -54,7 +54,7 @@ class Home extends Component {
             <ContainerBody>
                 <TitleDiv>
                     <T1>Join Us!</T1>
-                    <T3>Our rush process:</T3>
+                    <T3><span role="img" aria-label="shake">🤝</span> We're excited to meet you!</T3>
                 </TitleDiv>
                 <div style={{ height: '150px' }} />
                 <Gallery>
