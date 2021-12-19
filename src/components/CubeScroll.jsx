@@ -24,6 +24,7 @@ const LogoTextImg = styled.img`
     transform: rotate(270deg);
     @media (max-width: 800px) {
         width: 100px;
+        margin-top: 50px;
     }
     @media (max-width: 400px) {
         width: 50px;
@@ -60,6 +61,7 @@ const LogoIconImg = styled.img`
     user-select: none;
     user-drag: none;
     @media (max-width: 800px) {
+        margin-top: 7.5px;
         width: 20px;
     }
     @media (max-width: 400px) {
@@ -75,7 +77,7 @@ const CubeScroll = () => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     var scrollMax = 180;
     if (vw < 900) {
-        scrollMax = 150;
+        scrollMax = 125;
     }
     if (vw <= 400) {
         scrollMax = 70;

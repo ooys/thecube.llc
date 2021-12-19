@@ -40,7 +40,7 @@ const StartupLogoImage = styled.img`
     max-width: 500px;
     margin: 25px;
     margin-top: 45px;
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         width: 40%;
         margin-top: 35px;
         margin-right: 0;
@@ -55,50 +55,70 @@ const LogoImage = styled.img`
     height: 95px;
     width: 95px;
     margin: 15px;
+    cursor: pointer;
+    user-select: none;
+    user-drag: none;
     @media (max-width: 800px) {
-        height: 60px;
-        width: 60px;
+        height: 65px;
+        width: 65px;
         margin: 5px;
+    }
+    :hover {
+        transform: scale(1.05);
     }
 `;
 
 class Home extends Component {
     render() {
-        var experiences = [
-            "amazon",
-            "meta",
-            "microsoft",
-            "stripe",
-            "slack",
-            "dropbox",
-            "ibm",
-            "optum",
-            "mckinsey",
-            "bcg",
-            "bain",
-            "goldman",
-            "jane",
-            "optiver",
-            "bridgewater",
-            "morgan",
-            "citi",
-            "kp",
-            "atomic",
-            "contrary",
-            "pear",
-            "drf",
-            "hc",
-            "soma",
-            "check",
-            "retool",
-            "anduril",
-            "alloy",
-            "pendo",
-            "magical",
-            "titan",
-            "uizard",
-            "curai",
-        ]
+        var experiences = {
+            amazon: "https://www.amazon.com/",
+            meta: "https://meta.com/",
+            microsoft: "https://microsoft.com/",
+            salesforce: "https://salesforce.com/",
+            stripe: "https://stripe.com/",
+            palantir: "https://www.palantir.com/",
+            slack: "https://slack.com/",
+            dropbox: "https://dropbox.com/",
+            ibm: "https://ibm.com/",
+            optum: "https://optum.com/",
+            mckinsey: "https://www.mckinsey.com/",
+            bcg: "https://www.bcg.com/",
+            bain: "https://www.bain.com/",
+            goldman: "https://www.goldmansachs.com/",
+            vanguard: "https://vanguard.com/",
+            jane: "https://www.janestreet.com/",
+            optiver: "https://optiver.com/",
+            bridgewater: "https://www.bridgewater.com/",
+            morgan: "https://www.morganstanley.com/",
+            citi: "https://www.citi.com/",
+            kp: "https://kleinerperkins.com/",
+            atomic: "https://atomic.vc/",
+            contrary: "https://contrarycap.com/",
+            pear: "https://pear.vc/",
+            drf: "https://drf.vc/",
+            hc: "https://human.capital/",
+            soma: "https://www.somacap.com/",
+            alumniventures: "https://www.av.vc/",
+            check: "https://www.checkhq.com/",
+            ondeck: "https://beondeck.com/",
+            retool: "https://retool.com/",
+            anduril: "https://www.anduril.com/",
+            alloy: "https://runalloy.com/",
+            coil: "https://coil.com/",
+            pendo: "https://pendo.io/",
+            sym: "https://symops.com/",
+            magical: "https://getmagical.com/",
+            islands: "https://islands.xyz/",
+            titan: "https://www.titan.com/",
+            uizard: "https://uizard.com/",
+            curai: "https://curaihealth.com/",
+            untitled: "https://untitledinbrackets.com/",
+            infinitus: "https://www.infinitus.ai/",
+            replicant: "https://www.replicant.ai/",
+            glowforge: "https://glowforge.com/",
+            balanced: "https://www.hellobalanced.com/",
+            leap: "https://www.leap.work/",
+        }
 
         var startups = [
             "jailbreak",
@@ -113,14 +133,17 @@ class Home extends Component {
             "coldcall",
         ]
 
-        var experiencesLogoSplash = experiences.map((exp) => {
+        
+        var experiencesLogoSplash = Object.keys(experiences).sort().map((expKey) => {
             return (
-                <LogoImage
-                    src={require(`../assets/company_logos/${exp
-                        .split(' ')
-                        .join('')
-                        .toLowerCase()}.jpg`)}
-                />
+                <a href={experiences[expKey]} target="_blank">
+                    <LogoImage
+                        src={require(`../assets/company_logos/${expKey
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                </a>
             );
         });
 

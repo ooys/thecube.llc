@@ -33,6 +33,12 @@ const Gallery = styled.div`
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 5vw);
     grid-gap: 15px;
+    @media (max-width: 800px) {
+        grid-gap: 10px;
+    }
+    @media (max-width: 400px) {
+        grid-gap: 5px;
+    }
 `;
 
 const GalleryImg = styled.img`
@@ -78,8 +84,9 @@ class Home extends Component {
                     }} />
                 </Gallery>
                 <T4>
-                    Every fall semester, we organize a rush process for member recruiting!
-                    We'll post online and around campus when we start. Rush lasts 2 weeks and has 2 rounds.
+                    Once a year we conduct a rush process where you will be able to get to know members and gain a better understanding of what the Cube is all about. 
+                    This usually lasts a couple weeks and happens towards the beginning of the semester.
+                    We post on official Duke class Facebook pages to announce our calendar.
                 </T4>
                 <div style={{ height: '75px' }} />
                 <Gallery>

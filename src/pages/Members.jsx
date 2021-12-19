@@ -24,9 +24,9 @@ const PersonTable = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     justify-content: space-between;
-    grid-gap: 10px;
+    grid-gap: 5px;
     margin-top: 25px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     @media (max-width: 800px) {
         grid-template-columns: repeat(auto-fill, 100px);
         margin-bottom: 50px;
@@ -38,16 +38,16 @@ const PersonContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     @media (max-width: 800px) {
         width: 125px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 `;
 
 const PersonImage = styled.img`
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     border-radius: 6px;
     object-fit: cover;
     margin-bottom: 20px;
@@ -135,6 +135,7 @@ class Members extends Component {
             "Clay Bromley",
             "Sonali Sanjay",
             "Claire Tan",
+            "Christina Yoh",
         ]
 
         c2020.sort();
