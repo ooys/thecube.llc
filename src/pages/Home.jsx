@@ -6,6 +6,15 @@ import T2 from '../components/T2';
 import T3 from '../components/T3';
 import T4 from '../components/T4';
 
+import Carpe from '../assets/startup_logos/carpe.jpg';
+import Diig from '../assets/startup_logos/diig.jpg';
+import Farmshots from '../assets/startup_logos/farmshots.jpg';
+import Ivella from '../assets/startup_logos/ivella.jpg';
+import Jailbreak from '../assets/startup_logos/jailbreak.jpg';
+import Mati from '../assets/startup_logos/mati.jpg';
+import Scope from '../assets/startup_logos/scope.jpg';
+import Toucan from '../assets/startup_logos/toucan.jpg';
+
 const ContainerBody = styled.div`
     width: 71.5%;
     display: flex;
@@ -38,25 +47,27 @@ const Table = styled.div`
 `;
 
 const StartupTable = styled.div`
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 5vw);
+    grid-gap: 15px;
+    @media (max-width: 800px) {
+        grid-gap: 10px;
+    }
+    @media (max-width: 400px) {
+        grid-gap: 5px;
+    }
 `;
 
 const StartupLogoImage = styled.img`
-    height: 40px;
-    max-width: 500px;
-    margin: 25px;
-    margin-top: 45px;
-    @media (max-width: 800px) {
-        width: 40%;
-        margin-top: 35px;
-        margin-right: 0;
-    }
-    // for mobile
-    @media (max-width: 400px) {
-        width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    :hover {
+        opacity: 0.9;
     }
 `;
 
@@ -72,6 +83,7 @@ const LogoImage = styled.img`
         width: 65px;
         margin: 5px;
     }
+    transition: all 0.2s ease;
     :hover {
         transform: scale(1.05);
     }
@@ -128,21 +140,8 @@ class Home extends Component {
             balanced: "https://www.hellobalanced.com/",
             leap: "https://www.leap.work/",
             dccc: "https://dccc.org/",
+            fattail: "https://www.fattail.com/",
         }
-
-        var startups = [
-            "jailbreak",
-            "toucan",
-            "farmshots",
-            "carpe",
-            "mati",
-            "scope",
-            "neuro",
-            "smart",
-            "buddies",
-            "coldcall",
-        ]
-
 
         var experiencesLogoSplash = Object.keys(experiences).sort().map((expKey) => {
             return (
@@ -154,17 +153,6 @@ class Home extends Component {
                             .toLowerCase()}.jpg`)}
                     />
                 </a>
-            );
-        });
-
-        var startupLogoSplash = startups.map((start) => {
-            return (
-                <StartupLogoImage
-                    src={require(`../assets/startup_logos/${start
-                        .split(' ')
-                        .join('')
-                        .toLowerCase()}.png`)}
-                />
             );
         });
 
@@ -194,11 +182,55 @@ class Home extends Component {
                     <T2>
                         What We've <span style={{ color: '#003CB1' }}>Built</span>
                     </T2>
-                    <T4>
-                        We love building! Here are just a few startups that we've built.
-                    </T4>
                     <StartupTable>
-                        {startupLogoSplash}
+                        <StartupLogoImage src={Ivella} onClick={()=> window.open("https://ivella.com/", "_blank")} style={{
+                            gridColumnStart: "1",
+                            gridColumnEnd: "5",
+                            gridRowStart: "1",
+                            gridRowEnd: "4",
+                        }} />
+                        <StartupLogoImage src={Jailbreak} onClick={()=> window.open("https://www.roblox.com/games/606849621/Jailbreak", "_blank")} style={{
+                            gridColumnStart: "5",
+                            gridColumnEnd: "10",
+                            gridRowStart: "1",
+                            gridRowEnd: "4",
+                        }} />
+                        <StartupLogoImage src={Carpe} onClick={()=> window.open("https://mycarpe.com/", "_blank")} style={{
+                            gridColumnStart: "1",
+                            gridColumnEnd: "5",
+                            gridRowStart: "4",
+                            gridRowEnd: "7",
+                        }} />
+                        <StartupLogoImage src={Farmshots} onClick={()=> window.open("http://farmshots.com/", "_blank")} style={{
+                            gridColumnStart: "5",
+                            gridColumnEnd: "10",
+                            gridRowStart: "4",
+                            gridRowEnd: "7",
+                        }} />
+                        <StartupLogoImage src={Toucan} onClick={()=> window.open("http://toucan.ai/", "_blank")} style={{
+                            gridColumnStart: "1",
+                            gridColumnEnd: "5",
+                            gridRowStart: "7",
+                            gridRowEnd: "10",
+                        }} />
+                        <StartupLogoImage src={Diig} onClick={()=> window.open("https://www.dukeimpact.org/", "_blank")} style={{
+                            gridColumnStart: "5",
+                            gridColumnEnd: "10",
+                            gridRowStart: "7",
+                            gridRowEnd: "10",
+                        }} />
+                        <StartupLogoImage src={Mati} onClick={()=> window.open("https://www.drinkmati.com/", "_blank")} style={{
+                            gridColumnStart: "1",
+                            gridColumnEnd: "5",
+                            gridRowStart: "10",
+                            gridRowEnd: "13",
+                        }} />
+                        <StartupLogoImage src={Scope} onClick={()=> window.open("https://scope.so/", "_blank")} style={{
+                            gridColumnStart: "5",
+                            gridColumnEnd: "10",
+                            gridRowStart: "10",
+                            gridRowEnd: "13",
+                        }} />
                     </StartupTable>
                 </Section>
                 <Section>
