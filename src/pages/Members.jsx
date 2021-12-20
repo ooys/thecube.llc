@@ -127,7 +127,8 @@ class Members extends Component {
             'Evan Shen',
             'Tina Xia',
             'Leslie Dees',
-            'Emily Mittleman'
+            'Emily Mittleman',
+            "Christian Chitty",
         ];
 
         var c2024 = [
@@ -137,6 +138,12 @@ class Members extends Component {
             "Claire Tan",
             "Christina Yoh",
             "Nils Roede",
+            "Xixi Lei",
+            "Ryan Hu",
+            "Junwoo Kang",
+            "Athena Yao",
+            "Aden Clemente",
+            "Chris Liang",
         ]
 
         c2020.sort();
