@@ -160,7 +160,7 @@ class Home extends Component {
             <ContainerBody>
                 <TitleDiv>
                     <T1>The Cube</T1>
-                    <T3><span role="img" aria-label="rocket">🚀</span> Duke's premier entrepeneurial organization.</T3>
+                    <T3><span role="img" aria-label="rocket">🚀</span> Duke's premier entrepreneurial organization.</T3>
                 </TitleDiv>
                 <Section>
                     <T2>
