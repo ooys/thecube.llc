@@ -141,6 +141,8 @@ class Home extends Component {
             leap: "https://www.leap.work/",
             dccc: "https://dccc.org/",
             fattail: "https://www.fattail.com/",
+            tesla: "https://www.tesla.com/",
+            openstore: "https://open.store/",
         }
 
         var experiencesLogoSplash = Object.keys(experiences).sort().map((expKey) => {
