@@ -143,6 +143,11 @@ class Home extends Component {
             fattail: "https://www.fattail.com/",
             tesla: "https://www.tesla.com/",
             openstore: "https://open.store/",
+            abnormal: "https://abnormalsecurity.com/",
+            bvp: "https://www.bvp.com/",
+            riva: "https://www.rivanegotiations.com/",
+            dashbot: "https://www.dashbot.io/",
+            kunduz: "https://kunduz.com/", 
         }
 
         var experiencesLogoSplash = Object.keys(experiences).sort().map((expKey) => {
