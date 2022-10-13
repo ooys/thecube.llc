@@ -226,7 +226,7 @@ class Home extends Component {
                             gridRowStart: "7",
                             gridRowEnd: "10",
                         }} />
-                        <StartupLogoImage src={Mati} onClick={()=> window.open("https://www.drinkmati.com/", "_blank")} style={{
+                        <StartupLogoImage src={Mati}  style={{
                             gridColumnStart: "1",
                             gridColumnEnd: "5",
                             gridRowStart: "10",
