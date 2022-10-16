@@ -8,6 +8,7 @@ import CubeScroll from './components/CubeScroll';
 
 import Home from './pages/Home';
 import Members from './pages/Members';
+import Exec from './pages/Exec';
 import Join from './pages/Join';
 
 const Container = styled.div`
@@ -67,6 +68,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route exact path='/members' component={Members} />
+                        <Route exact path='/exec' component={Exec} />
                         <Route exact path='/join' component={Join} />
                     </Switch>
                     <ContainerNav>
@@ -76,6 +78,9 @@ class App extends Component {
                         </StyledLink>
                         <StyledLink to='/members'>
                             <T5>Members</T5>
+                        </StyledLink>
+                        <StyledLink to='/exec'>
+                            <T5>Executive Team</T5>
                         </StyledLink>
                         <StyledLink to='/join'>
                             <T5>Join</T5>

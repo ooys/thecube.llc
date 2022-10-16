@@ -272,6 +272,14 @@ class Home extends Component {
                         {experiencesLogoSplash}
                     </Table>
                 </Section>
+                <Section>
+                    <T2>
+                        Get In <span style={{ color: '#003CB1' }}>Touch</span>
+                    </T2>
+                    <T4 style={{ marginBottom: "20px" }}>
+                        You can email us at dukethecube@gmail.com or find us on Instagram @thecube_duke.
+                    </T4>
+                </Section>
             </ContainerBody>
         );
     }
