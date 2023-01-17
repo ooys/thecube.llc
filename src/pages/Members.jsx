@@ -108,7 +108,6 @@ class Members extends Component {
         ];
         var c2023 = [
             'Ryan Chang',
-            'Jason Lee',
             'Kaitlyn Luo',
             'Ashna Ram',
             'William Xie',
@@ -128,22 +127,40 @@ class Members extends Component {
             'Tina Xia',
             'Leslie Dees',
             'Emily Mittleman',
-            "Christian Chitty",
+            'Christian Chitty',
         ];
 
         var c2024 = [
-            "Celina You",
-            "Clay Bromley",
-            "Sonali Sanjay",
-            "Claire Tan",
-            "Christina Yoh",
-            "Nils Roede",
-            "Xixi Lei",
-            "Ryan Hu",
-            "Junwoo Kang",
-            "Athena Yao",
-            "Aden Clemente",
-            "Chris Liang",
+            'Celina You',
+            'Clay Bromley',
+            'Sonali Sanjay',
+            'Claire Tan',
+            'Christina Yoh',
+            'Nils Roede',
+            'Xixi Lei',
+            'Ryan Hu',
+            'Junwoo Kang',
+            'Athena Yao',
+            'Aden Clemente',
+            'Chris Liang',
+            'Ayush Garg',
+            'Evelyn Shi',
+            'Emily Leung',
+            'Chang Yan'
+        ]
+
+        var c2025 = [
+            'Jason Lee',
+            'Kasey Park',
+            'Harry Liu',
+            'N Wang',
+            'Richard Kim',
+            'Tyler Cheung',
+            'Saathvik Boompelli',
+            'Aditya Gaur',
+            'Pranay Vure',
+            'Ellen Liu',
+            'Christian Okokhere'
         ]
 
         c2020.sort();
@@ -151,6 +168,7 @@ class Members extends Component {
         c2022.sort();
         c2023.sort();
         c2024.sort();
+        c2025.sort();
 
         var p2020 = c2020.map((p) => {
             return (
@@ -217,6 +235,20 @@ class Members extends Component {
                 </PersonContainer>
             );
         });
+
+        var p2025 = c2025.map((p) => {
+            return (
+                <PersonContainer>
+                    <PersonImage
+                        src={require(`../assets/people/${p
+                            .split(' ')
+                            .join('')
+                            .toLowerCase()}.jpg`)}
+                    />
+                    <T5>{p}</T5>
+                </PersonContainer>
+            );
+        });
         
 
         return (
@@ -226,6 +258,8 @@ class Members extends Component {
                     <T3><span role="img" aria-label="wave">👋</span> Say hi to our family!</T3>
                 </TitleDiv>
                 <div style={{ height: '250px' }} />
+                <T2>Class of 2025</T2>
+                <PersonTable>{p2025}</PersonTable>
                 <T2>Class of 2024</T2>
                 <PersonTable>{p2024}</PersonTable>
                 <T2>Class of 2023</T2>

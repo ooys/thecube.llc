@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import T1 from '../components/T1';
-import T2 from '../components/T2';
 import T3 from '../components/T3';
 import T5 from '../components/T5';
 
