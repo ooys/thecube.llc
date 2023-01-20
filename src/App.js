@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Link, Route } from 'react-router-dom';
 import './app.css';
 
 import Menu from './menu.svg';
@@ -65,12 +65,12 @@ class App extends Component {
             <BrowserRouter>
                 <Container>
                     <CubeScroll />
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route exact path='/members' component={Members} />
-                        <Route exact path='/exec' component={Exec} />
-                        <Route exact path='/join' component={Join} />
-                    </Switch>
+                    <Routes>
+                        <Route path='/' element={<Home/>} />
+                        <Route path='/members' element={<Members/>} />
+                        <Route path='/exec' element={<Exec/>} />
+                        <Route path='/join' element={<Join/>} />
+                    </Routes>
                     <ContainerNav>
                         <MenuIcon src={Menu} />
                         <StyledLink to='/'>
