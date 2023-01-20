@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion, useViewportScroll, useTransform } from 'framer-motion/dist/framer-motion';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 import LogoText from '../assets/cube_logos/cubelogotext.svg';
 import LogoIcon from '../assets/cube_logos/cubelogo.svg';
