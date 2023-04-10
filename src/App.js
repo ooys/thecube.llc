@@ -23,6 +23,7 @@ const ContainerNav = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
     padding-right: 50px;
     flex-grow: 1;
     @media (max-width: 768px) {
