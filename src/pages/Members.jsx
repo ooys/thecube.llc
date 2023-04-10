@@ -202,7 +202,8 @@ class Members extends Component {
             ["Anna Liu", "https://www.linkedin.com/in/anna-liu-al/"],
             ["Hannah Choi", "https://www.linkedin.com/in/hannahyoonyoungchoi"],
             ["Bill Ssewanyana", "https://www.linkedin.com/in/billssewanyana/"],
-            ["Nathan Shenkerman", "https://www.linkedin.com/in/nathan-shenkerman/"]
+            ["Nathan Shenkerman", "https://www.linkedin.com/in/nathan-shenkerman/"],
+            ["Aubteen Pour-Biazar", "https://www.linkedin.com/in/aubteen-pour-biazar/"]
         ]
 
         c2020.sort();
