@@ -188,8 +188,8 @@ class Members extends Component {
         ]
 
         var c2026 = [
+            ["Lasal Mapitigama", "https://www.linkedin.com/in/lasal-m-323a6a16b/"],
             ["Yihong Song", "https://www.linkedin.com/in/yihongs/"],
-            ["Peter Banyas", "https://www.linkedin.com/in/peterbanyas"],
             ["John Xu", "https://www.linkedin.com/in/john-j-xu/"],
             ["John Schappert", "https://www.linkedin.com/in/john-schappert/"],
             ["Ayush Jain", "https://www.linkedin.com/in/ayushjain04/"],
