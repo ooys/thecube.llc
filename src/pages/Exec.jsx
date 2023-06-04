@@ -75,59 +75,80 @@ class Exec extends Component {
                 <PersonTable>
                     <PersonContainer>
                         <PersonImage
-                            src={require(`../assets/people/nilsroede.jpg`)}
+                            src={require(`../assets/people/pranayvure.jpg`)}
                         />
-                        <T3>{'Nils Roede'}</T3>
+                        <T3>{'Pranay Vure'}</T3>
                         <T5>{'President'}</T5>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage
+                                src={require(`../assets/people/athenayao.jpg`)}
+                            />
+                            <T3>{'Athena Yao'}</T3>
+                            <T5>{'Vice President'}</T5>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage
+                                src={require(`../assets/people/richardkim.jpg`)}
+                            />
+                            <T3>{'Richard Kim'}</T3>
+                            <T5>{'Treasurer'}</T5>
                     </PersonContainer>
                     <PersonContainer>
                         <PersonImage
                                 src={require(`../assets/people/sonalisanjay.jpg`)}
                             />
                             <T3>{'Sonali Sanjay'}</T3>
-                            <T5>{'Vice President'}</T5>
+                            <T5>{'Professional'}</T5>
                     </PersonContainer>
                     <PersonContainer>
                         <PersonImage
-                                src={require(`../assets/people/chrisliang.jpg`)}
-                            />
-                            <T3>{'Chris Liang'}</T3>
-                            <T5>{'Treasurer'}</T5>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage
-                            src={require(`../assets/people/judyzhong.jpg`)}
+                            src={require(`../assets/people/hollyzhuang.jpg`)}
                         />
-                        <T3>{'Judy Zhong'}</T3>
+                        <T3>{'Holly Zhuang'}</T3>
                         <T5>{'Social'}</T5>
                     </PersonContainer>
                     <PersonContainer>
                         <PersonImage
-                                src={require(`../assets/people/adenclemente.jpg`)}
+                            src={require(`../assets/people/adenclemente.jpg`)}
+                        />
+                        <T3>{'Aden Clemente'}</T3>
+                        <T5>{'Social'}</T5>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage
+                                src={require(`../assets/people/annaliu.jpg`)}
                             />
-                            <T3>{'Aden Clemente'}</T3>
+                            <T3>{'Anna Liu'}</T3>
                             <T5>{'Recruitment'}</T5>
                     </PersonContainer>
                     <PersonContainer>
                         <PersonImage
-                                src={require(`../assets/people/claybromley.jpg`)}
+                                src={require(`../assets/people/yihongsong.jpg`)}
                             />
-                            <T3>{'Clay Bromley'}</T3>
+                            <T3>{'Yihong Song'}</T3>
+                            <T5>{'Recruitment'}</T5>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage
+                                src={require(`../assets/people/nilsroede.jpg`)}
+                            />
+                            <T3>{'Nils Roede'}</T3>
+                            <T5>{'Alumni'}</T5>
+                    </PersonContainer>
+                    <PersonContainer>
+                        <PersonImage
+                                src={require(`../assets/people/johnbuxton.jpg`)}
+                            />
+                            <T3>{'John Buxton'}</T3>
                             <T5>{'New Member Education'}</T5>
                     </PersonContainer>
                     <PersonContainer>
                         <PersonImage
-                            src={require(`../assets/people/athenayao.jpg`)}
-                        />
-                        <T3>{'Athena Yao'}</T3>
-                        <T5>{'Alumni'}</T5>
-                    </PersonContainer>
-                    <PersonContainer>
-                        <PersonImage
-                                src={require(`../assets/people/celinayou.jpg`)}
+                                src={require(`../assets/people/johnxu.jpg`)}
                             />
-                            <T3>{'Celina You'}</T3>
-                            <T5>{'Marketing'}</T5>
+                            <T3>{'John Xu'}</T3>
+                            <T5>{'New Member Education'}</T5>
                     </PersonContainer>
                 </PersonTable>
                 

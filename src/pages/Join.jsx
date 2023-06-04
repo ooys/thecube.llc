@@ -13,6 +13,7 @@ import Img5 from '../assets/gallery/5.jpg';
 import Img6 from '../assets/gallery/6.jpg';
 import Img7 from '../assets/gallery/7.jpg';
 import Img8 from '../assets/gallery/8.jpg';
+import Img9 from '../assets/gallery/9.jpg';
 
 const ContainerBody = styled.div`
     width: 71.5%;
@@ -91,10 +92,16 @@ class Home extends Component {
                 </T4>
                 <div style={{ height: '75px' }} />
                 <Gallery>
-                    <GalleryImg src={Img6} style={{
+                    <GalleryImg src={Img9} style={{
                         gridColumnStart: "1",
                         gridColumnEnd: "4",
                         gridRowStart: "1",
+                        gridRowEnd: "4",
+                    }} />
+                    <GalleryImg src={Img6} style={{
+                        gridColumnStart: "1",
+                        gridColumnEnd: "4",
+                        gridRowStart: "4",
                         gridRowEnd: "7",
                     }} />
                     <GalleryImg src={Img1} style={{
