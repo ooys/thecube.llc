@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Yihong Song</title>
+                <title>The Cube</title>
             </Head>
             <Component {...pageProps} />
         </>
