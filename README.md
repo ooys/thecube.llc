@@ -1,4 +1,4 @@
-# Cube @ Duke Public Website
+# Cube @ Duke - Public Website
 
 ## Running the website locally
 Run `npm start`
